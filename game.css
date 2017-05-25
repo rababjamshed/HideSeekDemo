@@ -243,17 +243,19 @@
 
 .MessBox{ position: relative; height:164x; overflow:hidden; }
 .PullCoinLeft{ position: absolute; top:6px;}
-.CashMess{ clear: both; height:96px;  margin-top: 20px;  background: rgba(245, 245, 245, 0.9);}
-.PullOnLeft{ float: left; margin-left: 240px; padding-top: 16px;}
+.CashMess{ clear: both; height:50px;  margin-top: 20px;  background: rgba(245, 245, 245, 0.9);}
+.PullOnLeft{ float: left; margin-left:86px; padding-top: 10px;height: 66px;}
 
-.TodayHitCoin{ float: left; width:100px; height: 110px; text-align: center; margin-left: 2px; background:rgba(245, 245,245, 0.9); margin-top: 40px;}
+.TodayHitCoin{ float: left; width:102px; height: 122px; text-align: center; margin-left: 2px; background:rgba(245, 245,245, 0.9); margin-top: 18px;}
 .TodayHitCoin:nth-child(1){margin-left: 12px;}
 .AchieveCoinHd{ background-color: #1c5db1; height:22px; font-size: 12px; padding-top: 3px; color:#fff;}
 .NotAchieveCoinHd{ background-color: #4d4d4d; height:22px; font-size: 12px; padding-top: 3px; color:#fff;}
-.AchieveCoin{ position: relative; text-align: center; padding-top: 12px; }
-.NotAchieveCoin{ width: 50px; height: 50px; margin: 12px auto; border: 1px solid #cecece; border-radius:50%; }
+.AchieveCoin{ position: relative; text-align: center; padding-top: 6px; }
+.NotAchieveCoin{ width: 48px; height: 48px; margin: 4px auto; border: 1px solid #cecece; border-radius:50%; }
 .CoinTick{ position: absolute; bottom: -5px; right: 18px;}
 .PotImg{ float:right; padding-right: 22px; padding-top: 12px;}
+.smallLogobox{ clear: both; height:30px; width: auto; margin-top:3px;}
+.smallLogo{ width: auto; height: 30px; }
 
 .PopUptablink{ position: absolute; bottom: 0px; clear: both; height: auto;overflow: hidden; width: 100%; }
 .PopUptablink li a{ float: left; padding-top: 10px; padding-bottom: 9px; color:#fff; width: 33.1%; border-right:1px solid #427ecc; text-align: center;  background-color: #1c5db1; list-style: none; }
