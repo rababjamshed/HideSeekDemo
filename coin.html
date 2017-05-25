@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+
+<style>
+	
+.flip li
+{
+    display: inline-block;
+    height: 200px;
+    list-style: none;
+    width: 200px;
+}
+.flip img
+{            
+    backface-visibility: hidden;
+    position: absolute;
+    transform: rotateY(180deg);
+    transition: transform 1s linear .5s;
+}
+    .flip img:first-child
+    {                
+        transform: rotateY(0deg);
+    }
+
+.transition img
+{
+    transform: rotateY(0deg);
+    transition: transform 1s linear .5s;                    
+    transform-style: preserve-3d;
+}
+    .transition img:first-child
+    {
+        transform: rotateY(180deg);
+    }
+
+</style>
+</head>
+
+<body>
+<ul class="flip" style="padding: 0 40px 0 35px;">
+			<li class="">
+				<img src="images/coin1.png" width="76" height="76">
+				<img src="images/coin1.png" width="76" height="76">
+			</li>
+			
+			
+		</ul>
+</body>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  	<script>
+  		/* Flip Effect */
+
+$(document).ready(function ()
+{
+    var jFlip = $('.flip').find('li');
+
+    function flip()
+    {
+        if (jFlip.length >= 1)
+        {
+            var oNextImg = jFlip[Math.floor(Math.random() * jFlip.length)];
+            $(oNextImg).toggleClass('transition');
+        }
+    }
+
+    $('img:first-child').on('transitionend webkitTransitionEnd mozTransitionEnd otransition MSTransitionEnd', flip);
+
+    window.setTimeout(flip, 500);
+});
+  	</script>
+
+</html>
