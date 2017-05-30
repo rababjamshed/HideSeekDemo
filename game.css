@@ -10,6 +10,7 @@
 .GapPlus{ padding: 5px; }
 .RedTxt{ color:Red;}
 .Txt21{ font-size: 24px; line-height: 32px; font-weight: bold; }
+.Txt19{ font-size: 18px; line-height: 28px; font-weight: bold; }
 .Empty{Clear:both; height: auto; overflow: hidden;}
 
 .GameTabs{ clear:both; height:auto; overflow:hidden; margin:40px auto;}
@@ -72,7 +73,7 @@
 }
 .game-grid{
   background:#fff;
-  width: 14.28% ;
+  width: 16.66% ;
   box-sizing: border-box;
   display: block;
   overflow: hidden;
